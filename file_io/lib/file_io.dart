@@ -4,7 +4,7 @@ import 'package:path_provider/path_provider.dart';
 
 class FileIo {
   Future<String> get _localPath async {
-    final dir = await getDownloadsDirectory();
+    final dir = await getApplicationDocumentsDirectory();
     return dir!.path;
   }
 
